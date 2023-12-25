@@ -143,7 +143,6 @@ function cleanDist() {
         .pipe(clean())
 }
 
-
 function building() {
     return src([
         'app/css/style.min.css',
@@ -153,8 +152,6 @@ function building() {
     ], { base: 'app' })
         .pipe(dest('dist'))
 }
-
-
 
 exports.styles = styles;
 exports.images = images;
