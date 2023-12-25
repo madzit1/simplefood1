@@ -1,0 +1,56 @@
+$accent: #ff6838;
+$default: #31352B;
+$btn: #FFF2ED;
+$bg: #F9FAFF;
+
+%Rubik-Light-400 {
+    font-family: 'Rubik-Light', sans-serif;
+    font-weight: 300;
+}
+
+%Rubik-Medium-500 {
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%Rubik-Regular-400 {
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
+}
+
+
+%btn{
+    &:hover {
+        background-color: #fff;
+        color: $accent;
+        fill: $accent;
+    }
+
+    &:focus {
+        outline-color: $accent;
+        background-color: $btn;
+        color: $accent;
+        fill: $accent;
+    }
+
+    &:active {
+        background-color: $btn;
+        color: $accent;
+        fill: $accent;
+    }
+}
+
+%link{
+    &:hover {
+        color: $accent;
+    }
+
+    &:focus {
+        outline-color: $accent;
+    }
+
+    &:active {
+        color: #363853;
+        text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.50);
+    }
+}
