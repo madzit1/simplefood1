@@ -1,3 +1,3 @@
 $(function(){
-    var mixer = mixitup('.popular-categories__content-list');
+    var mixer = mixitup('.categories__content-list');
 });
