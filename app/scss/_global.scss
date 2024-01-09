@@ -1,4 +1,3 @@
-
 html,
 body {
     height: 100%;
@@ -21,7 +20,7 @@ body {
     padding: 0 15px;
 }
 
-.categories{
+.blog {
     padding: 120px 0 120px;
 }
 
@@ -51,17 +50,41 @@ body {
     flex-grow: 1;
 }
 
-.button{
+.article__box {
+    border: 1px solid #ECECEC;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 210px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px 10px 20px 10px;
+    font-size: 15px;
+    outline: 1px solid transparent;
+    transition: outline-color 0.5s;
+
+    &:hover {
+        outline-color: $accent;
+    }
+
+    &__price {
+        font-weight: 500;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+}
+
+.button {
     font-size: 14px;
     line-height: 1.3;
     background-color: $accent;
     color: #fff;
-    outline: 1px solid transparent;
     border-radius: 5px;
     padding: 7px 16px;
-    cursor: pointer;
-    outline: 1px solid transparent;
-    transition: outline-color 0.5s, background-color 0.5s, color 0.5s, ;
+    transition: outline 0.5s, background-color 0.5s, color 0.5s, ;
 
     &:hover {
         background-color: #fff;
@@ -69,7 +92,7 @@ body {
     }
 
     &:focus {
-        outline-color: $accent;
+        outline: 1px solid $accent;
         background-color: $btn;
         color: $accent;
     }
@@ -77,5 +100,12 @@ body {
     &:active {
         background-color: $btn;
         color: $accent;
+    }
+
+    &--big {
+        font-size: 18px;
+        padding: 12px 32px;
+        margin-right: 35px;
+        transition: outline-color 0.5s, background-color 0.5s, color 0.5s, ;
     }
 }
