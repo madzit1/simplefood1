@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpleFood</title>
+    <title>Быстрая доставка еды</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -14,7 +14,6 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -60,16 +59,17 @@
         </div>
     </header>
     <main class="main">
+        <h1 class="sr-only">сервис доставки еды SimpleFood</h1>
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
                     <div class="hero__box">
-                        <p class="hero__title">
+                        <h2 class="hero__title">
                             Доставка
                             <span class="hero__subtitle">
                                 за 15 минут
                             </span>
-                        </p>
+                        </h2>
                         <p class="hero__text">
                             Самый быстрый сервис доставки еды в вашем
                             городе.Не уложимся в срок - доставка за наш счёт
@@ -86,9 +86,9 @@
         </section>
         <section class="categories blog">
             <div class="container">
-                <h1 class="title">
+                <h2 class="title">
                     Популярные категории
-                </h1>
+                </h2>
                 <ul class="categories__list">
                     <li class="categories__item">
                         <button class="categories__btn" type="button" data-filter="all">
@@ -133,16 +133,16 @@
                 </ul>
                 <ul class="categories__content-list">
                     <li class="categories__content-item mix category-a">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="article__img" src="images/burger/burger1.jpg"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger1.jpg"
                                     alt="чизбургер с листьями салата" width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Чизбургер с листьями салата
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     160
-                                    <span class="categories__content-currency">
+                                    <span class="currency">
                                         грн.
                                     </span>
                                 </span>
@@ -153,14 +153,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix category-a">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger2.jpg" alt="бифбургер"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger2.jpg" alt="бифбургер"
                                     width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Бифбургер
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     190
                                     <span class="currency">
                                         грн.
@@ -173,14 +173,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix mix category-b">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger3.jpg"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger3.jpg"
                                     alt="королевский чизбургер" width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Королевский чизбургер
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     260
                                     <span class="currency">
                                         грн.
@@ -193,14 +193,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix category-d">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger4.jpg"
-                                    alt="черный гамбургер" width="140" height="140">
-                                <p class="categories__content-text">
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger4.jpg" alt="черный гамбургер"
+                                    width="140" height="140">
+                                <h3 class="product-card__title">
                                     Черный гамбургер
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     199
                                     <span class="currency">
                                         грн.
@@ -213,14 +213,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix category-b">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger5.jpg" alt="чикен бургер"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger5.jpg" alt="чикен бургер"
                                     width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Чикен бургер
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     180
                                     <span class="currency">
                                         грн.
@@ -233,14 +233,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix category-с">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger1.jpg"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger1.jpg"
                                     alt="чизбургер с листьями салата" width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Чизбургер с листьями салата
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     160
                                     <span class="currency">
                                         грн.
@@ -253,14 +253,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix category-a">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger2.jpg" alt="бифбургер"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger2.jpg" alt="бифбургер"
                                     width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Бифбургер
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     190
                                     <span class="currency">
                                         грн.
@@ -273,14 +273,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix category-a">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger3.jpg"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger3.jpg"
                                     alt="королевский чизбургер" width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Королевский чизбургер
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     260
                                     <span class="currency">
                                         грн.
@@ -293,14 +293,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix category-c">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger4.jpg"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger4.jpg"
                                     alt="черный гамбургер" width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Черный гамбургер
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     199
                                     <span class="currency">
                                         грн.
@@ -313,14 +313,14 @@
                         </article>
                     </li>
                     <li class="categories__content-item mix category-c">
-                        <article class="article__box">
-                            <a class="categories__content-link" href="#">
-                                <img class="categories__content-img" src="images/burger/burger5.jpg" alt="чикен бургер"
+                        <article class="product-card">
+                            <a class="product-card__link" href="#">
+                                <img class="product-card__img" src="images/burger/burger5.jpg" alt="чикен бургер"
                                     width="140" height="140">
-                                <p class="categories__content-text">
+                                <h3 class="product-card__title">
                                     Чикен бургер
-                                </p>
-                                <span class="categories__content-price">
+                                </h3>
+                                <span class="product-card__price">
                                     180
                                     <span class="currency">
                                         грн.
@@ -348,9 +348,9 @@
                     </a>
                     <form class="footer__form" action="#">
                         <label class="footer__form-label" for="email">
+                            <span class="sr-only">введите вашу почту</span>
                             <input class="footer__form-input" type="email" id="email" name="email" required
                                 placeholder="Ваш email">
-                            <span class="sr-only"> ваша почта</span>
                         </label>
                         <button class="footer__form-btn" type="submit">
                             <svg class="footer__btn-icon" width="15px" height="15px">
@@ -449,8 +449,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="social">
-                        <ul class="social__list">
+                        <ul class="social">
                             <li class="social__item">
                                 <a class="social__link" href="#">
                                     <svg class="social__icon" width="20px" height="20px">
@@ -476,7 +475,6 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
                 </address>
             </div>
         </div>
