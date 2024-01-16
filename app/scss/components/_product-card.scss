@@ -3,9 +3,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -18,20 +16,21 @@
     }
 
     &__link {
-        display: contents;
-    }
+        flex-grow: 1;
+        transition: opacity 0.5s, color 0.3s, text-shadow 0.3s;
 
-    &__img {
-        margin-bottom: 10px;
-        transition: opacity;
-
-        &:hover {
-            opacity: .80;
+        &:focus {
+            color: $accent;
         }
 
         &:active {
-            opacity: .50;
+            opacity: .70;
+            text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.50);
         }
+    }
+
+    &__img {
+        margin: 0 auto 10px;
     }
 
     &__title {
@@ -39,36 +38,18 @@
         font-weight: 400;
         margin-bottom: 10px;
         cursor: pointer;
-        border-radius: 5px ;
+        border-radius: 5px;
         outline: 1px solid transparent;
         transition: color 0.5s, outline-color 0.5s, text-shadow 0.5s;
-        
-        &:hover {
-            color: $accent;
-        }
-
-        &:focus {
-            outline-color: $accent;
-        }
-
-        &:active {
-            text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
-        }
     }
 
     &__price {
         font-size: 15px;
         font-weight: 500;
+        margin-top: auto;
         margin-bottom: 10px;
+        display: block;
         line-height: 1.4;
         transition: color 0.5s, text-shadow 0.5s;
-
-        &:hover {
-            color: $accent;
-        }
-
-        &:active {
-            text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
-        }
     }
 }
