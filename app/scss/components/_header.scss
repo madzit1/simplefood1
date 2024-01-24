@@ -68,8 +68,11 @@
         outline: 1px solid transparent;
         width: 44px;
         height: 44px;
+        fill: transparent;
+        stroke: #363853;
         border-radius: 5px;
         transition: outline-color 0.5s, background-color 0.5s;
+
 
         &:not(:last-child){
             margin-right: 15px;
@@ -94,8 +97,6 @@
     &__btn-icon {
         width: 18px;
         height: 18px;
-        fill: transparent;
-        stroke: #363853;
     }
 
     &__num {

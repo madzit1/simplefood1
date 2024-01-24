@@ -24,7 +24,8 @@
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "jquery": "^3.7.1",
-    "sass": "^1.69.3"
+    "sass": "^1.69.3",
+    "slick-carousel": "^1.8.1"
   },
   "dependencies": {
     "mixitup": "^3.3.1"

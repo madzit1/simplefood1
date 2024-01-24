@@ -132,12 +132,32 @@
         font-style: normal;
         display: flex;
         align-items: center;
+        outline: 1px solid transparent;
+        border-radius: 5px;
+        transition: color 0.5s, outline-color 0.5s, text-shadow 0.5s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+
+        &:active {
+            text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
+        }
     }
 
     &__icon {
         fill: transparent;
         stroke: $default;
         margin-right: 10px;
+        transition: stroke 0.5s;
+
+        &:hover{
+            stroke: $accent;
+        }
     }
 }
 

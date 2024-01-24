@@ -1,0 +1,41 @@
+.mobile-app{
+    padding: 120px 0 120px;
+
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__title{
+        text-align: left;
+        margin-bottom: 45px;
+    }
+
+    &__box{
+        max-width: 540px;
+        width: 100%;
+        margin-right: 65px;
+    }
+
+    &__text{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__bottom{
+        display: flex;
+    }
+
+    &__link{
+        transition: opacity 0.5s;
+        
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+
+        &:hover{
+            opacity: .70;
+        }
+    }
+}
