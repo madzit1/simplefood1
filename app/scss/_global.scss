@@ -72,9 +72,9 @@ body {
     }
 
     &--big {
+        display: inline-block;
         font-size: 18px;
         padding: 12px 32px;
-        margin-right: 35px;
         transition: outline-color 0.5s, background-color 0.5s, color 0.5s, ;
     }
 }

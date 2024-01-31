@@ -62,41 +62,40 @@
 
 .user-nav {
     display: flex;
+
     &__btn {
         display: block;
         position: relative;
+        color: #363853;
         outline: 1px solid transparent;
         width: 44px;
         height: 44px;
-        fill: transparent;
-        stroke: #363853;
         border-radius: 5px;
-        transition: outline-color 0.5s, background-color 0.5s;
+        transition: outline-color 0.5s, background-color 0.5s, color 0.5s;
 
-
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: 15px;
         }
+
         &:focus {
             outline-color: $accent;
             background-color: rgba(255, 122, 80, 0.10);
-            stroke: #363853;
+
         }
 
         &:hover {
             background-color: $accent;
-            stroke: #fff;
+            color: #fff;
         }
 
         &:active {
             background-color: $btn;
-            stroke: #363853;
         }
     }
 
     &__btn-icon {
-        width: 18px;
-        height: 18px;
+        fill: transparent;
+        stroke: currentColor;
     }
 
     &__num {

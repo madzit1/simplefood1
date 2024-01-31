@@ -1,0 +1,77 @@
+.advantages {
+    padding: 120px 0 120px;
+
+    &__inner {
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: 22% center;
+        display: flex;
+        align-items: center;
+    }
+
+    &__box {
+        max-width: 470px;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        display: block;
+    }
+
+    &__text {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 34px;
+            height: 34px;
+            margin-right: 30px;
+        }
+
+        &--stopwatch {
+            &::before {
+                background-image: url('../images/icons/advantages/stopwatch.svg');
+            }
+        }
+
+        &--delivery {
+            &::before {
+                background-image: url('../images/icons/advantages/delivery.svg');
+            }
+        }
+
+        &--shop {
+            &::before {
+                background-image: url('../images/icons/advantages/shop.svg');
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img {
+        margin-right: 30px;
+
+    }
+
+}

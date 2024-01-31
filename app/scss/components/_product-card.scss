@@ -40,7 +40,15 @@
         cursor: pointer;
         border-radius: 5px;
         outline: 1px solid transparent;
-        transition: color 0.5s, outline-color 0.5s, text-shadow 0.5s;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        transition: color 0.5s, text-shadow 0.5s, -webkit-line-clamp 0.5s ;
+
+        &:hover {
+            -webkit-line-clamp: unset;
+        }
     }
 
     &__price {
