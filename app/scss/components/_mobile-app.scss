@@ -35,6 +35,16 @@
         background-size: cover;
         background-position: center;
 
+        &--apple {
+            width: 120px;
+            height: 40px;
+        }
+
+        &--google {
+            width: 135px;
+            height: 40px;
+        }
+
         &:not(:last-child) {
             margin-right: 30px;
         }
@@ -47,7 +57,7 @@
             outline-color: $accent ;
         }
 
-        &:active{
+        &:active {
             opacity: .80;
         }
     }

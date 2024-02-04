@@ -1,7 +1,16 @@
     .restaurants-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid #fff;
+        border-top: none;
+        border-radius: 10px;
+        background-color: #FFF;
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.10);
+        transition: box-shadow 0.5s;
 
-        &__img {
-            margin-bottom: 15px;
+        &:hover {
+            box-shadow: 0px 3px 15px 0px rgba(255, 104, 56, 0.50);
         }
 
         &__title {
@@ -15,19 +24,18 @@
             overflow: hidden;
         }
 
-        &__info{
-            padding: 15px 20px 20px 20px;
+        &__info {
             display: flex;
             flex-direction: column;
             flex-grow: 1;
+            padding: 15px 20px 20px 20px;
         }
 
         &__bottom {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
             text-align: center;
+            margin-top: auto;
         }
 
         &__link {
@@ -35,7 +43,7 @@
             border: 1px solid $accent;
             border-radius: 20px;
             background-color: $accent;
-            padding: 5px 24px;
+            padding: 3px 24px;
             width: 80px;
             height: 33px;
             margin-right: 20px;
@@ -63,6 +71,16 @@
             line-height: 30px;
             display: flex;
             align-items: center;
+
+            &::before {
+                content: '';
+                background-image: url('../images/icons/restaurants/time.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
         }
 
         &__arrow-icon {

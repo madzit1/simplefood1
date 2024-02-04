@@ -7,17 +7,4 @@
         grid-gap: 30px;
     }
 
-    &__item {
-        border: 1px solid #fff;
-        border-top: none;
-        border-radius: 10px;
-        background-color: #FFF;
-        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.10);
-        transition: box-shadow 0.5s;
-
-        &:hover {
-            box-shadow: 0px 3px 15px 0px rgba(255, 104, 56, 0.50);
-        }
-    }
-
 }

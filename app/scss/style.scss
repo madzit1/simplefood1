@@ -9,7 +9,7 @@
 @import 'components/advantages';
 @import 'components/restaurants';
 @import 'components/restaurants-card';
-@import 'components/customer';
+@import 'components/review';
 @import 'components/mobile-app';
 @import 'components/footer';
 
@@ -22,6 +22,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right center;
+        
     }
 
     &__box {
