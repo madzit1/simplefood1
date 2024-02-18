@@ -26,7 +26,7 @@
         padding: 14px 32px;
         outline: 1px solid transparent;
         fill: #363853;
-        transition: outline-color 0.5s, box-shadow 0.5s, background-color 0.5s, color 0.5s,;
+        transition: outline-color 0.5s, box-shadow 0.5s, background-color 0.5s, color 0.5s, ;
 
         &:hover {
             background-color: $btn;
@@ -85,4 +85,56 @@
     background-color: $accent;
     color: #fff;
     fill: #fff;
+}
+
+@media(max-width:1200px) {
+    .categories {
+
+        &__list{
+            flex-wrap: unset;
+            overflow: scroll;
+        }
+        &__content-list {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .categories {
+        padding: 50px 0 50px;
+        &__content-list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .categories {
+        &__title {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+
+        &__list {
+         margin-bottom: 30px;
+        }
+
+        &__content-list {
+            gap: 5px;
+        }
+
+        &__btn {
+            font-size: 14px;
+            padding: 12px 16px;
+        }
+
+        &__icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
 }

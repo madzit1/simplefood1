@@ -198,3 +198,45 @@
     padding: 30px 0 30px;
     border-top: 1px solid #C2C2C2;
 }
+
+
+@media(max-width:1200px) {
+    .footer {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media(max-width:992px) {
+    .footer {
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+            margin-right: 0;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__box {
+            margin-bottom: 30px;
+            order: -1;
+        }
+
+        &__list{
+            margin-bottom: 30px;
+        }
+    }
+
+    .address{
+        order: -1;
+        margin-bottom: 30px;
+    }
+}

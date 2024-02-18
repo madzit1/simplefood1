@@ -5,6 +5,69 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
+        
     }
 
+}
+
+@media(max-width:1200px) {
+    .restaurants {
+        &__list {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+        }
+    }
+}
+
+@media(max-width:800px){
+
+    .restaurants{
+        &__list {
+            grid-gap: 30px;
+        }
+
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 15px;
+            order: 2;
+    
+            li {
+                margin-right: 15px;
+                transform: translateY(-7px);
+    
+                button {
+                    padding: 0;
+                    font-size: 0;
+                    background-color: #c2c2c2;
+                    outline: 1px solid transparent;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    transition: outline-color 0.5s, background-color 0.5s;
+    
+                    &:hover {
+                        outline-color: #FFAE94;
+                        background-color: $btn;
+                    }
+    
+                    &:focus {
+                        outline-color: $accent;
+                    }
+    
+                    &:active {
+                        background-color: #FFAE94;
+                    }
+                }
+    
+                &.slick-active {
+                    button {
+                        background-color: $accent;
+                    }
+                }
+            }
+        }
+    }
 }
