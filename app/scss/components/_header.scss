@@ -196,10 +196,9 @@
             }
 
             &__menu-link {
-                line-height: 50px;
+             padding-bottom: 15px;
             }
-
-
+            
             .mobile-menu__logo-img {
                 display: block;
                 margin-bottom: 25px;
@@ -252,15 +251,16 @@
             width: 0;
         }
 
-        .address{
+        .address {
 
-            &__item{
-                &:not(:last-child){
+            &__item {
+                &:not(:last-child) {
                     margin-bottom: 0;
                 }
             }
-            &__link{
-                line-height: 50px;
+
+            &__link {
+                padding-bottom: 15px;
             }
         }
 
