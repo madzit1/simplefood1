@@ -24,26 +24,6 @@ $(function () {
         });
     });
 
-    $('.restaurants__list').slick({
-        dots: true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpead: 2000,
-
-        responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }
-        ]
-    });
-
-
-
-
     var mixer = mixitup('.categories__content-list');
 
 

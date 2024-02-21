@@ -160,11 +160,11 @@
 
     &__link {
         outline: 1px solid transparent;
-        border-radius: 5px;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 40px;
         height: 40px;
-        padding: 10px;
         background-color: #ECECEC;
         border-radius: 50%;
         transition: outline-color 0.5s, background-color 0.5s, color 0.5s;
@@ -205,19 +205,18 @@
         &__list {
             grid-template-columns: repeat(2, 1fr);
             margin-right: 0;
+
+            @media(max-width:992px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @media(max-width:768px) {
+                margin-bottom: 30px;
+            }
         }
     }
 }
 
-
-@media(max-width:992px) {
-    .footer {
-        &__list {
-            grid-template-columns: repeat(1, 1fr);
-            margin-right: 0;
-        }
-    }
-}
 
 @media(max-width:768px) {
     .footer {
@@ -229,13 +228,9 @@
             margin-bottom: 30px;
             order: -1;
         }
-
-        &__list{
-            margin-bottom: 30px;
-        }
     }
 
-    .address{
+    .address {
         order: -1;
         margin-bottom: 30px;
     }
