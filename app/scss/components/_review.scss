@@ -1,21 +1,49 @@
 .review {
     padding: 120px 0 120px;
 
+    @media(max-width:768px) {
+        padding: 40px 0 40px;
+    }
+
     &__inner {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        @media(max-width:768px) {
+            flex-wrap: wrap-reverse;
+        }
     }
 
     &__img {
         margin-right: 80px;
         border-radius: 50%;
+
+        @media(max-width:1200px) {
+            margin-bottom: 20px;
+        }
+
+        @media(max-width:768px) {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            object-fit: cover;
+        }
+
+        @media(max-width:576px) {
+            width: 100px;
+            height: 100px;
+        }
     }
 
     &__item {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media(max-width:1200px) {
+            flex-direction: column;
+        }
     }
 
     &__content {
@@ -42,12 +70,21 @@
         &::before {
             background-image: url('../images/icons/customer/goute-open.svg');
             left: -39px;
+
+            @media(max-width:576px) {
+                top: -20px;
+                left: 1px;
+            }
         }
 
         &::after {
             background-image: url('../images/icons/customer/goute-close.svg');
             right: -38px;
             bottom: 90px;
+
+            @media(max-width:576px) {
+                right: 15px;
+            }
         }
     }
 
@@ -72,7 +109,6 @@
         order: 0;
     }
 
-
     .slick-dots {
         display: flex;
         justify-content: center;
@@ -83,6 +119,10 @@
         li {
             margin-right: 15px;
             transform: translateY(-7px);
+
+            @media(max-width:768px) {
+                display: none;
+            }
 
             button {
                 padding: 0;
@@ -147,6 +187,10 @@
 
         &--prew {
             order: 1;
+
+            @media(max-width:768px) {
+                margin-right: auto;
+            }
         }
 
         &--next {
@@ -155,92 +199,26 @@
             }
 
             order: 3;
+
+            @media(max-width:768px) {
+                margin-left: auto;
+            }
         }
 
         &__icon {
             fill: currentColor;
+        }
+
+        @media(max-width:768px) {
+            transform: translateY(120px);
+        }
+
+        @media(max-width:576px) {
+            transform: translateY(70px);
         }
     }
 }
 
 .prev {
     fill: $btn;
-}
-
-@media(max-width:1200px) {
-    .review {
-        &__item {
-            flex-direction: column;
-        }
-
-        &__img {
-            margin-bottom: 20px;
-
-            @media(max-width:768px) {
-                width: 200px;
-                height: 200px;
-                margin: 0 auto 20px;
-                object-fit: cover;
-            }
-
-            @media(max-width:576px) {
-                width: 100px;
-                height: 100px;
-            }
-        }
-
-    }
-}
-
-@media(max-width:768px) {
-    .review {
-        padding: 40px 0 40px;
-
-        &__inner {
-            flex-wrap: wrap-reverse;
-        }
-
-        .slick-dots {
-            li {
-                display: none;
-
-            }
-        }
-
-        .arrow-button {
-            transform: translateY(120px);
-
-            @media(max-width:576px) {
-                transform: translateY(70px);
-
-            }
-
-            &--prew {
-                margin-right: auto;
-            }
-
-            &--next {
-                margin-left: auto;
-            }
-        }
-    }
-}
-
-@media(max-width:576px) {
-    .review {
-        &__box {
-            &::before {
-                top: -20px;
-                left: 1px;
-            }
-
-            &::after {
-                right: 15px;
-            }
-        }
-    }
-
-    .title {
-        font-size: 24px;
-    }
 }

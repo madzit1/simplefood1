@@ -8,10 +8,20 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 70px;
+
+
+        @media(max-width:768px) {
+            flex-direction: column;
+        }
     }
 
     &__box {
         margin-right: 70px;
+
+        @media(max-width:768px) {
+            margin-bottom: 30px;
+            order: -1;
+        }
     }
 
     &__form-label {
@@ -90,6 +100,19 @@
         grid-gap: 20px;
         margin-right: 70px;
         width: 100%;
+
+        @media(max-width:1200px) {
+            grid-template-columns: repeat(2, 1fr);
+            margin-right: 0;
+        }
+
+        @media(max-width:992px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media(max-width:768px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__link {
@@ -113,6 +136,13 @@
 }
 
 .address {
+
+    @media(max-width:768px) {
+        order: -1;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     &__list {
         margin-bottom: 15px;
     }
@@ -120,6 +150,10 @@
     &__item {
         &:not(:last-child) {
             margin-bottom: 15px;
+
+            @media(max-width:768px) {
+                margin: 0;
+            }
         }
     }
 
@@ -143,6 +177,11 @@
 
         &:active {
             text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
+        }
+
+        @media(max-width:768px) {
+            padding: 8px 0;
+            width: 100%;
         }
     }
 
@@ -197,41 +236,4 @@
     align-items: center;
     padding: 30px 0 30px;
     border-top: 1px solid #C2C2C2;
-}
-
-
-@media(max-width:1200px) {
-    .footer {
-        &__list {
-            grid-template-columns: repeat(2, 1fr);
-            margin-right: 0;
-
-            @media(max-width:992px) {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            @media(max-width:768px) {
-                margin-bottom: 30px;
-            }
-        }
-    }
-}
-
-
-@media(max-width:768px) {
-    .footer {
-        &__inner {
-            flex-direction: column;
-        }
-
-        &__box {
-            margin-bottom: 30px;
-            order: -1;
-        }
-    }
-
-    .address {
-        order: -1;
-        margin-bottom: 30px;
-    }
 }
