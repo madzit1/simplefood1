@@ -79,12 +79,20 @@
     &__text {
         font-size: 20px;
         margin-bottom: 20px;
+
+        @media(max-width:768px) {
+            font-size: 16px;
+        }
     }
 
     &__bottom {
         display: flex;
         align-items: center;
         gap: 35px;
+
+        @media(max-width:768px) {
+            gap: 30px;
+        }
     }
 
     &__link {
@@ -94,6 +102,10 @@
         text-decoration: underline;
         outline: 1px solid transparent;
         transition: color 0.5s, outline-color 0.5s, text-shadow 0.5s;
+
+        @media(max-width:768px) {
+            font-size: 16px;
+        }
 
         &:hover {
             color: $accent;
