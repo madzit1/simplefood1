@@ -14,19 +14,18 @@ $(function () {
 
     $(document).ready(function () {
         $('.header__btn').click(function (evenet) {
-            $('.header__btn,.mobile-menu,.mobile-menu__top').addClass('active')
+            $('.backdrop').addClass('active')
+            $('.body').addClass('lock')
         });
     });
 
     $(document).ready(function () {
-        $('.mobile-menu__btn').click(function (evenet) {
-            $('.header__btn,.mobile-menu,.mobile-menu__top').removeClass('active')
+        $('.mobile-menu__close-button').click(function (evenet) {
+            $('.backdrop').removeClass('active')
+            $('.body').removeClass('lock')
         });
     });
 
     var mixer = mixitup('.categories__content-list');
-
-
-
 
 });

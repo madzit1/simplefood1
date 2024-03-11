@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -40,84 +40,86 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="mobile-menu">
-                        <a class="logo mobile-menu__logo" href="#">
-                            <img class="logo__img" src="images/logo.svg" alt="лого" width="200" height="40">
-                        </a>
-                        <button class="mobile-menu__btn" type="button">
-                            <span class="sr-only">кнопка закрытея</span>
-                        </button>
-                        <ul class="mobile-menu__menu-list">
-                            <li class="mobile-menu__menu-item">
-                                <a class="mobile-menu__menu-link" href="#">
-                                    Главная
-                                </a>
-                            </li>
-                            <li class="mobile-menu__menu-item">
-                                <a class="mobile-menu__menu-link" href="#">
-                                    Блюда
-                                </a>
-                            </li>
-                            <li class="mobile-menu__menu-item">
-                                <a class="mobile-menu__menu-link" href="#">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                        <address class="address">
-                            <ul class="address__list">
-                                <li class="address__item">
-                                    <a class="address__link" href="#">
-                                        <svg class="address__icon" width="22" height="22">
-                                            <use href="images/icons/sprite.svg#icon-location"></use>
-                                        </svg>
-                                        ул. Т.Г.Шевченко, 1
+                    <div class="backdrop">
+                        <div class="mobile-menu">
+                            <a class="logo mobile-menu__logo" href="#">
+                                <img class="logo__img" src="images/logo.svg" alt="лого" width="200" height="40">
+                            </a>
+                            <ul class="mobile-menu__list">
+                                <li class="mobile-menu__item">
+                                    <a class="mobile-menu__link" href="#">
+                                        Главная
                                     </a>
                                 </li>
-                                <li class="address__item">
-                                    <a class="address__link" href="tel:380501112233">
-                                        <svg class="address__icon" width="22" height="22">
-                                            <use href="images/icons/sprite.svg#icon-phone"></use>
-                                        </svg>
-                                        380501112233
+                                <li class="mobile-menu__item">
+                                    <a class="mobile-menu__link" href="#">
+                                        Блюда
                                     </a>
                                 </li>
-                                <li class="address__item">
-                                    <a class="address__link" href="mailto:support@sfoodcom">
-                                        <svg class="address__icon" width="22" height="22">
-                                            <use href="images/icons/sprite.svg#icon-message"></use>
-                                        </svg>
-                                        support@sfood.com
+                                <li class="mobile-menu__item">
+                                    <a class="mobile-menu__link" href="#">
+                                        Контакты
                                     </a>
                                 </li>
                             </ul>
-                            <ul class="social">
-                                <li class="social__item">
-                                    <a class="social__link" href="#">
-                                        <svg class="social__icon" width="20px" height="20px">
-                                            <use href="images/icons/sprite.svg#icon-facebook"></use>
-                                        </svg>
-                                        <span class="sr-only">фейсбук</span>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="#">
-                                        <svg class="social__icon" width="20px" height="20px">
-                                            <use href="images/icons/sprite.svg#icon-twitter"></use>
-                                        </svg>
-                                        <span class="sr-only">твиттер</span>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="#">
-                                        <svg class="social__icon" width="20" height="20">
-                                            <use href="images/icons/sprite.svg#icon-instagram"></use>
-                                        </svg>
-                                        <span class="sr-only">инстаграм</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </address>
+                            <address class="address">
+                                <ul class="address__list">
+                                    <li class="address__item">
+                                        <a class="address__link" href="#">
+                                            <svg class="address__icon" width="22" height="22">
+                                                <use href="images/icons/sprite.svg#icon-location"></use>
+                                            </svg>
+                                            ул. Т.Г.Шевченко, 1
+                                        </a>
+                                    </li>
+                                    <li class="address__item">
+                                        <a class="address__link" href="tel:380501112233">
+                                            <svg class="address__icon" width="22" height="22">
+                                                <use href="images/icons/sprite.svg#icon-phone"></use>
+                                            </svg>
+                                            380501112233
+                                        </a>
+                                    </li>
+                                    <li class="address__item">
+                                        <a class="address__link" href="mailto:support@sfoodcom">
+                                            <svg class="address__icon" width="22" height="22">
+                                                <use href="images/icons/sprite.svg#icon-message"></use>
+                                            </svg>
+                                            support@sfood.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="social__icon" width="20px" height="20px">
+                                                <use href="images/icons/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                            <span class="sr-only">фейсбук</span>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="social__icon" width="20px" height="20px">
+                                                <use href="images/icons/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                            <span class="sr-only">твиттер</span>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="social__icon" width="20" height="20">
+                                                <use href="images/icons/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                            <span class="sr-only">инстаграм</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </address>
+                            <button class="close-button  mobile-menu__close-button" type="button">
+                                <span class="sr-only">кнопка закрытея</span>
+                            </button>
+                        </div>
                     </div>
                 </nav>
                 <div class="user-nav">
