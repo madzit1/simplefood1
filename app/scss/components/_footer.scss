@@ -128,7 +128,6 @@
             width: 100%;
         }
 
-    
         &:hover {
             color: $accent;
         }
@@ -168,6 +167,7 @@
     &__link {
         font-size: 16px;
         line-height: 32px;
+        white-space: nowrap;
         font-style: normal;
         display: flex;
         align-items: center;

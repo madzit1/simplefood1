@@ -1,0 +1,51 @@
+.stock {
+    padding: 120px 0 120px;
+
+    &__title{
+      text-align: unset;
+      margin-bottom: 60px;
+    }
+
+    &__card {
+        max-width: 370px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        border-top: none;
+        border-radius: 10px;
+        background-color: #fff;
+
+        transition: box-shadow 0.5s;
+
+        &:hover {
+            box-shadow: 0px 3px 15px 0px rgba(255, 104, 56, 0.50);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__card-link{
+        transition: opacity 0.5s, color 0.3s, text-shadow 0.3s;
+
+        &:focus {
+            color: $accent;
+        }
+
+        &:active {
+            opacity: .70;
+            text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.50);
+        }
+    }
+
+    &__card-title {
+        font-size: 24px;
+        line-height: 1.3;
+        font-weight: 400;
+        padding: 15px;
+    }
+
+}

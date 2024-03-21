@@ -1,0 +1,198 @@
+.filters {
+    max-width: 270px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 30px;
+
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__link {
+        line-height: 1.3;
+        font-weight: 400;
+        outline: 1px solid transparent;
+        border-radius: 5px;
+        transition: color 0.5s, outline-color 0.5s, text-shadow 0.5s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+
+        &:active {
+            color: #363853;
+            text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.50);
+        }
+    }
+
+    &__label {
+        display: flex;
+        cursor: pointer;
+    }
+
+    &__box {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__input {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+
+        &:checked+.filters__checkbox {
+            background-image: url('../images/icons/filtres/check-mark.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            outline-color: #363853;
+        }
+    }
+
+    &__checkbox {
+        display: block;
+        width: 24px;
+        height: 24px;
+        outline: 1px solid #ececec;
+        border-radius: 3px;
+        background-color: rgb(255 174 148 / 20%);
+        margin-right: 10px;
+        transition: outline-color 0.5s;
+
+        &:hover {
+            outline-color: $accent;
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+    }
+
+    &__text {
+        line-height: 1.3;
+        transition: color 0.5s;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    .irs--round .irs-line {
+        top: 0;
+        height: 2px;
+
+    }
+
+    .filters .irs--round .irs-line {
+        background-color: #C2C2C2;
+        top: 0;
+        height: 2px;
+        border-radius: 0;
+    }
+
+    .irs--round .irs-bar {
+        top: 0;
+        height: 2px;
+        background-color: $accent;
+    }
+
+    .irs--round .irs-handle {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        top: -9px;
+        border: none;
+        background-color: $accent;
+    }
+
+    .irs--flat .irs-from {
+        display: none;
+    }
+
+    .irs--flat .irs-to {
+        display: none;
+    }
+
+    .irs--round .irs-min {
+        display: none;
+    }
+
+    .irs--round .irs-max {
+        display: none;
+    }
+
+    .irs--round .irs-to {
+        display: none;
+    }
+
+    .irs--round .irs-from {
+        display: none;
+    }
+
+    &__box-label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        font-size: 16px;
+        color: #c2c2c2;
+        line-height: 1.2;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            background-repeat: no-repeat;
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 12px;
+        }
+
+        &::before{
+            background-image: url('../images/icons/filtres/icon.svg');
+            left: 105px;
+        }
+
+        &::after{
+            background-image: url('../images/icons/filtres/icon.svg');
+            right: -10px;
+        }
+    }
+
+    &__box-input {
+        display: block;
+        text-align: center;
+        max-width: 70px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        outline: 1px solid #c2c2c2;
+        background-color: rgba(255, 104, 56, 0.1);
+        transition:  outline-color 0.5s;
+
+        &:focus{
+            outline-color: $accent;
+        }
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__box-text{
+        margin-right: 5px;
+    }
+}

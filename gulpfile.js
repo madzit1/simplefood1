@@ -10,6 +10,7 @@ const avif = require('gulp-avif');
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
+const fileInclude = require('gulp-file-include');
 
 function images() {
     return src(['app/images/src/*.*', '!app/images/src/*.svg'])
@@ -24,11 +25,13 @@ function images() {
         .pipe(dest('app/images/dist'))
 }
 
+
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/mixitup/dist/mixitup.min.js',
         'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
         'app/js/main.js',
     ])
         .pipe(concat('main.min.js'))
@@ -56,6 +59,7 @@ function watching() {
     watch(['app/images/src'], images);
     watch(['app/js/main.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/html/**/*.html'], htmlInclude);
 }
 
 function cleanDist() {
@@ -73,10 +77,21 @@ function building() {
         .pipe(dest('dist'))
 }
 
+const htmlInclude = () => {
+    return src(['app/html/*.html'])													
+    .pipe(fileInclude({
+      prefix: '@',
+      basepath: '@file',
+    }))
+    .pipe(dest('app'))
+    .pipe(browserSync.stream());
+  }
+
+exports.htmlInclude = htmlInclude;
 exports.styles = styles;
 exports.images = images;
 exports.scripts = scripts;
 exports.watching = watching;
 
 exports.build = series(cleanDist, building);
-exports.default = parallel(styles, images, scripts, watching);
+exports.default = parallel(htmlInclude, styles, images, scripts, watching);

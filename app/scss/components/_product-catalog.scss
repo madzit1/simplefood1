@@ -1,0 +1,40 @@
+.catalog {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__select {
+        display: flex;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__info {
+        margin-right: 15px;
+        flex-grow: 1;
+    }
+
+    &__content {
+        text-align: center;
+        flex-basis: 75%;
+    }
+
+    &__content-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__footer{
+       background-color: #363853;
+       color: #fff;
+    }
+}
+
+
+
