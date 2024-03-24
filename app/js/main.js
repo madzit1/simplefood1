@@ -1,9 +1,23 @@
 
 $(function () {
 
+    var mixer = mixitup('.grid');
+
+    $('.review__inner').slick({
+        dots: true,
+        fade: true,
+        autoplay: true,
+        autoplaySpead: 2000,
+        adaptiveHeight: true,
+        autoHeight: true,
+
+        prevArrow: '<button class="arrow-button arrow-button--prew" type="button"><span class="sr-only">попередній слайд</span><svg class="arrow-button__icon" width="10" height="18"><use href="images/icons/sprite.svg#icon-arrow-left"></use></svg></button>',
+        nextArrow: '<button class="arrow-button arrow-button--next" type="button"><span class="sr-only">наступний слайд</span><svg class="arrow-button__icon" width="10" height="18"><use href="images/icons/sprite.svg#icon-arrow-left"></use></svg><button>',
+    });
+
     var $range = $(".filters__price-input"),
-        $inputFrom = $(".filters__box-form"),
-        $inputTo = $(".filters__box-to"),
+        $inputFrom = $(".filters__box-input--from"),
+        $inputTo = $(".filters__box-input--to"),
         instance,
         min = 0,
         max = 1000,
@@ -62,66 +76,16 @@ $(function () {
 
 
     $(document).ready(function () {
-        $('.dropdown').click(function (evenet) {
-            $('.dropdown,.dropdown__list').toggleClass('active')
+        $('.selectNamesBtn').click(function (evenet) {
+            $('.dropdown--names').toggleClass('active')
+        });
+
+        $('.selectNumbersBtn').click(function (evenet) {
+            $('.dropdown--numbers').toggleClass('active')
         });
     });
-
-    const pagination = document.getElementById('pagination');
-    const pagination__prev = document.getElementById('pagination__prev');
-    const pagination__next = document.getElementById('pagination__next');
-    const pagination__item = document.guerySelectorAll('pagination__item');
-    let pagination__itemActive = 1;
-    pagination__next.addEventListenner('click', () => {
-        pagination__itemActive++;
-
-        if (pagination__itemActive > circles.length) {
-            pagination__itemActive = circles.length;
-        }
-        update();
-    });
-    pagination__prev.addEventListener('click' , () => {
-        pagination__itemActive--;
-        if ( pagination__itemActive < 1) {
-            pagination__itemActive = 1;
-        }
-
-        update();
-    });
-    function update() {
-        circles.forEach((circles, idx) => {
-            if (idx < pagination__itemActive) {
-                circle.classList.add('active');
-            } else {
-                circle.classList.remove('active');
-            }
-        });
-        const actives = document.guerySelectorAll('active');
-        pagination.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%';
-        if (pagination__itemActive === 1) {
-            pagination__prev.disabled = true;
-        } else if (pagination__itemActive === cirsles.length) {
-            pagination__next.disabled = true;
-        } else {
-            pagination__prev.disabled = false;
-            pagination__next.disabled = false;
-        }
-    }
-
 
     $('.select').styler();
-
-    $('.review__inner').slick({
-        dots: true,
-        fade: true,
-        autoplay: true,
-        autoplaySpead: 2000,
-        adaptiveHeight: true,
-        autoHeight: true,
-
-        prevArrow: '<button class="arrow-button arrow-button--prew" type="button"><span class="sr-only">попередній слайд</span><svg class="arrow-button__icon" width="10" height="18"><use href="images/icons/sprite.svg#icon-arrow-left"></use></svg></button>',
-        nextArrow: '<button class="arrow-button arrow-button--next" type="button"><span class="sr-only">наступний слайд</span><svg class="arrow-button__icon" width="10" height="18"><use href="images/icons/sprite.svg#icon-arrow-left"></use></svg><button>',
-    });
 
     $(document).ready(function () {
         $('.header__btn').click(function (evenet) {
@@ -136,8 +100,5 @@ $(function () {
             $('.body').removeClass('lock')
         });
     });
-
-
-    var mixer = mixitup('.categories__content-list');
 });
 

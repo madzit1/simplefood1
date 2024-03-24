@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +14,23 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body class="body">
 <header class="header">
     <div class="container">
         <div class="header__inner">
             <nav class="menu">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img class="logo__img" src="images/logo.svg" alt="лого" width="200" height="40">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="index.html">
                             Головна
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="сatalogue.html">
                             Страви
                         </a>
                     </li>
@@ -146,6 +148,7 @@
 
 
 <main class="main">
+    <h1 class="sr-only">каталог вибору меню їжі SimpleFood</h1>
     <div class="breadcrumbs">
     <div class="container">
         <ul class="breadcrumbs__list">
@@ -153,7 +156,7 @@
                 <a class="breadcrumbs__link" href="#">Головна</a>
             </li>
             <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Каталог продуктів</a>
+                <span class="breadcrumbs__link">Каталог продуктів</span>
             </li>
         </ul>
     </div>
@@ -161,84 +164,80 @@
     <section class="catalog">
     <div class="container">
         <div class="catalog__top">
-            <h2 class="title catalog__title">
+            <h2 class="title">
                 Каталог продуктів
             </h2>
             <div class="catalog__select">
-                <div class="dropdown">
-                    <div class="dropdown__select">
+                <div class="dropdown dropdown--names">
+                    <button class="dropdown__select selectNamesBtn" type="button">
                         <span class="dropdown__selected">За назвою</span>
-                        <div class="dropdown__carent">
-                            <svg class="dropdown__icon" width="10" height="10">
-                                <use href="images/icons/sprite.svg#icon-arrow-bottom"></use>
-                            </svg>
-                        </div>
-                    </div>
+                        <svg class="dropdown__icon" width="10" height="10">
+                            <use href="images/icons/sprite.svg#icon-arrow-bottom"></use>
+                        </svg>
+                    </button>
                     <ul class="dropdown__list">
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 Бургери
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 Піца
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 Сендвічі
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 Азійська кухня
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 Сети
                             </button>
                         </li>
                     </ul>
                 </div>
-                <div class="dropdown">
-                    <div class="dropdown__select">
+                <div class="dropdown dropdown--numbers">
+                    <button class="dropdown__select selectNumbersBtn" type="button">
                         <span class="dropdown__selected">по 12</span>
-                        <button class="dropdown__carent">
-                            <svg class="dropdown__icon" width="10" height="10">
-                                <use href="images/icons/sprite.svg#icon-arrow-bottom"></use>
-                            </svg>
-                        </button>
-                    </div>
+                        <svg class="dropdown__icon" width="10" height="10">
+                            <use href="images/icons/sprite.svg#icon-arrow-bottom"></use>
+                        </svg>
+                    </button>
                     <ul class="dropdown__list">
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 по 12
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 по 11
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 по 10
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 по 9
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 по 8
                             </button>
                         </li>
                         <li class="dropdown__item">
-                            <button class="dropdown__btn">
+                            <button class="dropdown__btn" type="button">
                                 по 7
                             </button>
                         </li>
@@ -249,119 +248,126 @@
         <div class="catalog__inner">
             <div class="catalog__info">
                 <div class="filters">
-                    <h3 class="title--small">Категорії</h3>
-                    <ul class="filters__list">
-                        <li class="filters__item">
-                            <a class="filters__link" href="#">Бургери</a>
-                        </li>
-                        <li class="filters__item">
-                            <a class="filters__link" href="#">Піца</a>
-                        </li>
-                        <li class="filters__item">
-                            <a class="filters__link" href="#">Сендвічі</a>
-                        </li>
-                        <li class="filters__item">
-                            <a class="filters__link" href="#">Азійська кухня</a>
-                        </li>
-                        <li class="filters__item">
-                            <a class="filters__link" href="#">Сети</a>
-                        </li>
-                        <li class="filters__item">
-                            <a class="filters__link" href="#">Європейська кухня</a>
-                        </li>
-                        <li class="filters__item">
-                            <a class="filters__link" href="#">Напої</a>
-                        </li>
-                        <li class="filtersg__item">
-                            <a class="filters__link" href="#">Алкоголь</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filters">
-                    <h3 class="title--small">Пропозиції</h3>
-                    <form class="filters__form" action="#">
-                        <label class="filters__label" for="checkbox">
-                            <div class="filters__box">
-                                <input class="filters__input" type="checkbox" id="checkbox" name="checkbox">
-                                <span class="filters__checkbox"></span>
-                            </div>
-                            <span class="filters__text">Зі знижкою</span>
-                        </label>
-                        <label class="filters__label">
-                            <div class="filters__box">
-                                <input class="filters__input" type="checkbox">
-                                <span class="filters__checkbox"></span>
-                            </div>
-                            <span class="filters__text">Новинка</span>
-                        </label>
-                        <label class="filters__label">
-                            <div class="filters__box">
-                                <input class="filters__input" type="checkbox">
-                                <span class="filters__checkbox"></span>
-                            </div>
-                            <span class="filters__text">Хіт сезону</span>
-                        </label>
-                    </form>
-                </div>
-                <div class="filters">
-                    <h3 class="title--small">Ціна</h3>
-                    <form class="filters__form" action="#">
-                        <label class="filters__box-label">
-                            <span class="filters__box-text">від</span>
-                            <input class="filters__box-input filters__box-form" value="100">
-                            <span class="filters__box-text">до</span>
-                            <input class="filters__box-input filters__box-to" value="1000">
-                        </label>
-                        <label class="filters__price-label">
-                            <input class="filters__price-input" data-min="100" data-max="1000" data-form="200"
-                                data-to="500">
-                        </label>
-                    </form>
-                </div>
+    <h3 class="filters__title">Категорії</h3>
+    <ul class="filters__list">
+        <li class="filters__item">
+            <a class="filters__link" href="#">Бургери</a>
+        </li>
+        <li class="filters__item">
+            <a class="filters__link" href="#">Піца</a>
+        </li>
+        <li class="filters__item">
+            <a class="filters__link" href="#">Сендвічі</a>
+        </li>
+        <li class="filters__item">
+            <a class="filters__link" href="#">Азійська кухня</a>
+        </li>
+        <li class="filters__item">
+            <a class="filters__link" href="#">Сети</a>
+        </li>
+        <li class="filters__item">
+            <a class="filters__link" href="#">Європейська кухня</a>
+        </li>
+        <li class="filters__item">
+            <a class="filters__link" href="#">Напої</a>
+        </li>
+        <li class="filtersg__item">
+            <a class="filters__link" href="#">Алкоголь</a>
+        </li>
+    </ul>
+</div>
+<div class="filters">
+    <h3 class="filters__title">Пропозиції</h3>
+    <form class="filters__form" action="#">
+        <label class="filters__label" for="checkbox">
+            <span class="sr-only">виберіть пропозицію</span>
+            <div class="filters__box">
+                <input class="filters__input" type="checkbox" id="checkbox" name="checkbox">
+                <span class="filters__checkbox"></span>
+            </div>
+            <span class="filters__text">Зі знижкою</span>
+        </label>
+        <label class="filters__label" for="checkbox">
+            <span class="sr-only">виберіть пропозицію</span>
+            <div class="filters__box">
+                <input class="filters__input" type="checkbox" id="checkbox" name="checkbox">
+                <span class="filters__checkbox"></span>
+            </div>
+            <span class="filters__text">Новинка</span>
+        </label>
+        <label class="filters__label" for="checkbox">
+            <span class="sr-only">виберіть пропозицію</span>
+            <div class="filters__box">
+                <input class="filters__input" type="checkbox" id="checkbox" name="checkbox">
+                <span class="filters__checkbox"></span>
+            </div>
+            <span class="filters__text">Хіт сезону</span>
+        </label>
+    </form>
+</div>
+<div class="filters">
+    <h3 class="filters__title">Ціна</h3>
+    <form class="filters__form" action="#">
+        <label class="filters__box-label">
+            <span class="sr-only">напишіть ціну</span>
+            <span class="filters__box-text">від</span>
+            <input class="filters__box-input filters__box-input--from" value="100">
+            <span class="filters__box-text">до</span>
+            <input class="filters__box-input filters__box-input--to" value="1000">
+        </label>
+        <label class="filters__price-label">
+            <span class="sr-only">потягніть повзунок</span>
+            <input class="filters__price-input" data-min="100" data-max="1000" data-form="200"
+                data-to="500">
+        </label>
+    </form>
+</div>
             </div>
             <div class="catalog__content">
-                <ul class="categories__content-list catalog__content-list">
-                    <li class="categories__content-item mix category-a">
+                <ul class="grid grid--4fr">
+                    <li class="grid__item mix category-a">
                         <article class="product-card">
-                            <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="images/burger/burger1.jpg"
-                                    alt=" Чізбургер з листям салату" width="140" height="140">
-                                <h3 class="product-card__title">
-                                    Чізбургер з листям салату
-                                </h3>
-                                <span class="product-card__price">
-                                    160
-                                    <span class="currency">
-                                        грн.
-                                    </span>
-                                </span>
-                            </a>
-                            <button class="button" type="button">
-                                До кошика
-                            </button>
-                        </article>
+    <a class="product-card__link" href="#">
+        <img class="product-card__img" src="images/burger/burger1.jpg" alt=" Чізбургер з листям салату" width="140"
+            height="140">
+        <h3 class="product-card__title">
+            @productNames
+        </h3>
+        <span class="product-card__price">
+            160
+            <span class="currency">
+                грн.
+            </span>
+        </span>
+    </a>
+    <button class="button" type="button">
+        До кошика
+    </button>
+</article>
+
                     </li>
-                    <li class="categories__content-item mix category-a">
+                    <li class="grid__item mix category-a">
                         <article class="product-card">
-                            <a class="product-card__link" href="#">
-                                <img class="product-card__img" src="images/burger/burger2.jpg" alt="Біфбургер"
-                                    width="140" height="140">
-                                <h3 class="product-card__title">
-                                    Біфбургер
-                                </h3>
-                                <span class="product-card__price">
-                                    190
-                                    <span class="currency">
-                                        грн.
-                                    </span>
-                                </span>
-                            </a>
-                            <button class="button" type="button">
-                                До кошика
-                            </button>
-                        </article>
+    <a class="product-card__link" href="#">
+        <img class="product-card__img" src="images/burger/burger1.jpg" alt=" Чізбургер з листям салату" width="140"
+            height="140">
+        <h3 class="product-card__title">
+            @productNames
+        </h3>
+        <span class="product-card__price">
+            160
+            <span class="currency">
+                грн.
+            </span>
+        </span>
+    </a>
+    <button class="button" type="button">
+        До кошика
+    </button>
+</article>
+
                     </li>
-                    <li class="categories__content-item mix mix category-b">
+                    <li class="grid__item mix mix category-b">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger3.jpg"
@@ -381,7 +387,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix category-d">
+                    <li class="grid__item mix category-d">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger4.jpg" alt="  Чорний гамбургер"
@@ -401,7 +407,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix category-b">
+                    <li class="grid__item mix category-b">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger5.jpg" alt="Чікен бургер"
@@ -421,7 +427,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix category-с">
+                    <li class="grid__item mix category-с">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger1.jpg"
@@ -441,7 +447,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix category-a">
+                    <li class="grid__item mix category-a">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger2.jpg" alt="Біфбургер"
@@ -461,7 +467,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix category-a">
+                    <li class="grid__item mix category-a">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger3.jpg"
@@ -481,7 +487,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix category-c">
+                    <li class="grid__item mix category-c">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger4.jpg" alt="Чорний гамбургер"
@@ -501,7 +507,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix category-c">
+                    <li class="grid__item mix category-c">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger5.jpg" alt="Чікен бургер"
@@ -521,7 +527,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix mix category-b">
+                    <li class="grid__item mix mix category-b">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger3.jpg"
@@ -541,7 +547,7 @@
                             </button>
                         </article>
                     </li>
-                    <li class="categories__content-item mix category-d">
+                    <li class="grid__item mix category-d">
                         <article class="product-card">
                             <a class="product-card__link" href="#">
                                 <img class="product-card__img" src="images/burger/burger4.jpg" alt="  Чорний гамбургер"
@@ -565,37 +571,38 @@
             </div>
         </div>
         <div class="pagination">
-            <a class="pagination__prev pagination__arrow" href="#" disabled> 
-                <svg class="pagination__icon" width="11" height="18">
-                    <use href="images/icons/sprite.svg#icon-arrow-left2"></use>
-                </svg>
-            </a>
-            <ul class="pagination__list">
-                <li class="pagination__item active">
-                    <a class="pagination__link">1</a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link">2</a>
-                </li>
-                <li class="pagination__item">
-                    <span class="pagination__link">...</span>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link">9</a>
-                </li>
-                <li class="pagination__item">
-                    <a class="pagination__link">10</a>
-                </li>
-            </ul>
-            <a class="pagination__next pagination__arrow"> 
-                <svg class="pagination__icon pagination__icon--right" width="11" height="18">
-                    <use href="images/icons/sprite.svg#icon-arrow-left2"></use>
-                </svg>
-            </a>
-        </div> 
+    <a class="pagination__arrow-link pagination__arrow-link--prev disabled" href="#">
+        <span class="sr-only">стрілка вліво</span>
+        <svg class="pagination__icon disabled" width="11" height="18">
+            <use href="images/icons/sprite.svg#icon-arrow-left2"></use>
+        </svg>
+    </a>
+    <ul class="pagination__list">
+        <li class="pagination__item active">
+            <span class="pagination__link current">1</span>
+        </li>
+        <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item">
+            <span class="pagination__link" href="#">...</span>
+        </li>
+        <li class="pagination__item">
+            <a class="pagination__link" href="#">9</a>
+        </li>
+        <li class="pagination__item">
+            <a class="pagination__link" href="#">10</a>
+        </li>
+    </ul>
+    <a class="pagination__arrow-link pagination__arrow-link--next">
+        <span class="sr-only">стрілка вправо</span>
+        <svg class="pagination__icon pagination__icon--right" width="11" height="18">
+            <use href="images/icons/sprite.svg#icon-arrow-left2"></use>
+        </svg>
+    </a>
+</div>
     </div>
 </section>
-
     <section class="mobile-app">
     <div class="container">
         <div class="mobile-app__inner">
@@ -668,9 +675,6 @@
         </ul>
     </div>
 </section>
-
-
-
 </main>
 <footer class="footer">
     <div class="container">
@@ -681,7 +685,7 @@
                 </a>
                 <form class="footer__form" action="#">
                     <label class="footer__form-label" for="email">
-                        <span class="sr-only">введіть вашу пошту</span>
+                        <span class="sr-only">введіть вашу пошту></span>
                         <input class="footer__form-input" type="email" id="email" name="email" required
                             placeholder="Ваш email">
                     </label>
@@ -811,7 +815,7 @@
             </ul>
         </div>
     </div>
-    <p class="footer__text catalog__footer">© 2022 Simple Food</p>
+    <p class="footer__text">© 2022 Simple Food</p>
 </footer>
 <script src="js/main.min.js"></script>
 </body>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +14,23 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body class="body">
 <header class="header">
     <div class="container">
         <div class="header__inner">
             <nav class="menu">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img class="logo__img" src="images/logo.svg" alt="лого" width="200" height="40">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="index.html">
                             Головна
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#">
+                        <a class="menu__link" href="сatalogue.html">
                             Страви
                         </a>
                     </li>
@@ -219,8 +221,8 @@
                 </button>
             </li>
         </ul>
-        <ul class="categories__content-list">
-            <li class="categories__content-item mix category-a">
+        <ul class="grid">
+            <li class="grid__item mix category-a">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger1.jpg"
@@ -240,7 +242,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix category-a">
+            <li class="grid__item mix category-a">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger2.jpg" alt="Біфбургер"
@@ -260,7 +262,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix mix category-b">
+            <li class="grid__item mix mix category-b">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger3.jpg"
@@ -280,7 +282,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix category-d">
+            <li class="grid__item mix category-d">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger4.jpg" alt="  Чорний гамбургер"
@@ -300,7 +302,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix category-b">
+            <li class="grid__item mix category-b">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger5.jpg" alt="Чікен бургер"
@@ -320,7 +322,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix category-с">
+            <li class="grid__item mix category-с">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger1.jpg"
@@ -340,7 +342,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix category-a">
+            <li class="grid__item mix category-a">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger2.jpg" alt="Біфбургер"
@@ -360,7 +362,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix category-a">
+            <li class="grid__item mix category-a">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger3.jpg"
@@ -380,7 +382,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix category-c">
+            <li class="grid__item mix category-c">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger4.jpg" alt="Чорний гамбургер"
@@ -400,7 +402,7 @@
                     </button>
                 </article>
             </li>
-            <li class="categories__content-item mix category-c">
+            <li class="grid__item mix category-c">
                 <article class="product-card">
                     <a class="product-card__link" href="#">
                         <img class="product-card__img" src="images/burger/burger5.jpg" alt="Чікен бургер"
@@ -460,7 +462,7 @@
 </section>
     <section class="restaurants">
     <div class="container">
-        <h2 class="title">Найкращі ресторани</h2>
+        <h2 class="title restaurants__title">Найкращі ресторани</h2>
         <ul class="restaurants__list">
             <li class="restaurants__item">
                 <article class="restaurants-card">
@@ -625,7 +627,7 @@
 </section>
     <section class="review">
     <div class="container">
-        <h2 class="title">Відгуки клієнтів</h2>
+        <h2 class="title review__title">Відгуки клієнтів</h2>
         <div class="review__inner">
             <div class="review__info">
                 <div class="review__item">
@@ -748,7 +750,7 @@
                 </a>
                 <form class="footer__form" action="#">
                     <label class="footer__form-label" for="email">
-                        <span class="sr-only">введіть вашу пошту</span>
+                        <span class="sr-only">введіть вашу пошту></span>
                         <input class="footer__form-input" type="email" id="email" name="email" required
                             placeholder="Ваш email">
                     </label>
@@ -880,7 +882,7 @@
     </div>
     <p class="footer__text">© 2022 Simple Food</p>
 </footer>
- <script src="js/main.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>

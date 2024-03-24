@@ -8,33 +8,29 @@
     }
 
     &__item {
-        position: relative;
-
-        &::before {
-            content: '';
-            display: block;
-            width: 6px;
-            height: 10px;
-            background-repeat: no-repeat;
-            position: absolute;
-            right: -12px;
-            top: 10px;
-            cursor: pointer;
-        }
-
-        &--arrow {
-            &::before {
-                background-image: url('../images/icons/breadcrumbs/arrow.svg');
-            }
-
-        }
 
         &:not(:last-child) {
-            margin-right: 18px;
+            margin-right: 5px;
+
+            .breadcrumbs__link{
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 6px;
+                    height: 10px;
+                    background-image: url('../images/icons/breadcrumbs/arrow.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
         }
     }
 
     &__link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
         font-size: 14px;
         line-height: 1.2;
         color: #505050;

@@ -78,7 +78,7 @@ function building() {
 }
 
 const htmlInclude = () => {
-    return src(['app/html/*.html'])													
+    return src(['app/html/page/*.html'])													
     .pipe(fileInclude({
       prefix: '@',
       basepath: '@file',
