@@ -80,7 +80,7 @@ function building() {
 const htmlInclude = () => {
     return src(['app/html/page/*.html'])													
     .pipe(fileInclude({
-      prefix: '@',
+      prefix: '@@',
       basepath: '@file',
     }))
     .pipe(dest('app'))
